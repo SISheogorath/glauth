@@ -236,6 +236,15 @@ bindTest "cn=sarahdoe,ou=superheros,dc=glauth,dc=com" \
   "cn=sarahdoe" \
   "AppPwOtp3"
 
+
+####
+# Test for a user who also uses OTP
+####
+bindTest "cn=jackdoe, ou=superheros, dc=glauth, dc=com" \
+  "TestAppPw3" \
+  "cn=jackdoe" \
+  "AppPwNoOtp3"
+
 #############
 ## Cleanup
 #############
